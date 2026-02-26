@@ -32,8 +32,8 @@ class NewsletterForm(BaseModel):
 # IMPORTANTE: Configure estas variáveis posteriormente no deploy
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SENDER_EMAIL = "seuemail@gmail.com"  # Altere para o seu Gmail
-SENDER_PASSWORD = "sua_senha_de_app" # Senha de app gerada na conta Google
+SENDER_EMAIL = "ph.sama@gmail.com"  # Altere para o seu Gmail
+SENDER_PASSWORD = "pcnfcptbqniwpuil" # Senha de app gerada na conta Google
 
 def send_email_sync(subject: str, body: str, to_emails: list):
     """Função bloqueante para enviar o e-mail via SMTP."""
@@ -45,13 +45,12 @@ def send_email_sync(subject: str, body: str, to_emails: list):
     msg.attach(MIMEText(body, 'html'))
 
     try:
-        # Quando for rodar valendo com as credenciais preenchidas, descomente o login e envio!
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
         server.starttls()
-        # server.login(SENDER_EMAIL, SENDER_PASSWORD)
-        # server.send_message(msg)
+        server.login(SENDER_EMAIL, SENDER_PASSWORD)
+        server.send_message(msg)
         server.quit()
-        print(f"E-mail simulado com sucesso! Assunto: {subject}")
+        print(f"E-mail enviado com sucesso! Assunto: {subject}")
     except Exception as e:
         print(f"Falha ao enviar e-mail: {e}")
 

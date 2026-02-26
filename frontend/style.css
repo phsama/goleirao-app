@@ -111,7 +111,7 @@ body {
     min-height: 90vh;
     background: linear-gradient(rgba(26, 26, 36, 0.85), rgba(26, 26, 36, 0.95)), url('hero_banner.png');
     background-size: cover;
-    background-position: center;
+    background-position: center right 15%;
     background-attachment: fixed;
     color: var(--white);
 }

@@ -36,8 +36,13 @@ body {
     background-color: var(--bg-color);
     color: var(--text-dark);
     line-height: 1.6;
-    overflow-x: hidden;
 }
+
+#app {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 /* Navbar */
 .navbar {

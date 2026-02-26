@@ -641,12 +641,13 @@ footer {
     }
 }
 
-/* Responsive */
+/* Responsive — 992px */
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
         text-align: center;
         padding-top: 140px;
+        padding-bottom: 60px;
     }
 
     .hero-actions {
@@ -654,13 +655,13 @@ footer {
     }
 
     .hero-content {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .hero-image {
         width: 100%;
-        max-width: 400px;
-        height: 400px;
+        max-width: 380px;
+        height: 380px;
     }
 
     h1 {
@@ -668,15 +669,114 @@ footer {
     }
 }
 
+/* Responsive — 768px (tablets e iPhone landscape) */
 @media (max-width: 768px) {
+    /* Navbar: mantém em linha mas menor */
     .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 5%;
+        flex-direction: row;
+        padding: 14px 5%;
+        gap: 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
     }
 
     .links {
-        gap: 20px;
+        gap: 16px;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        background-attachment: scroll; /* parallax quebra em mobile */
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Esconde o card decorativo no mobile — economiza espaço */
+    .hero-image {
+        display: none;
+    }
+
+    /* Botões do hero: coluna, full width */
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .hero-actions .cta-button {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+
+    /* Seções */
+    .how-it-works {
+        padding: 60px 5%;
+    }
+
+    .story-intro h2 {
+        font-size: 2rem;
+    }
+
+    .story-intro p {
+        font-size: 1rem;
+    }
+
+    .steps-grid {
+        gap: 24px;
+    }
+
+    .step-card {
+        padding: 36px 24px;
+    }
+
+    /* Partnership */
+    .partnership-card h2 {
+        font-size: 2rem;
+    }
+
+    .partnership-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .partnership-actions .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Forms: coluna única */
+    .two-col-forms {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-card,
+    .contact-card {
+        padding: 36px 24px;
+    }
+
+    .newsletter-card h2,
+    .contact-card h2 {
+        font-size: 1.6rem;
     }
 
     .inline-form {
@@ -687,15 +787,58 @@ footer {
         max-width: 100%;
     }
 
+    /* Botão flutuante WhatsApp menor */
+    .floating-wa {
+        width: 56px;
+        height: 56px;
+        bottom: 24px;
+        right: 20px;
+    }
+}
+
+/* Responsive — 430px (iPhone 14 Pro Max e similares) */
+@media (max-width: 430px) {
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .logo {
+        font-size: 1.35rem;
+    }
+
+    .links a {
+        font-size: 0.82rem;
+    }
+
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.1rem;
+        letter-spacing: -0.5px;
     }
 
-    .newsletter-card {
-        padding: 40px 30px;
+    .badge {
+        font-size: 0.78rem;
+        padding: 6px 14px;
     }
 
-    .step-card {
-        padding: 40px 20px;
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .story-intro h2 {
+        font-size: 1.7rem;
+    }
+
+    .partnership-card h2 {
+        font-size: 1.7rem;
+    }
+
+    .newsletter-card h2,
+    .contact-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        font-size: 0.95rem;
+        padding: 15px 20px;
     }
 }

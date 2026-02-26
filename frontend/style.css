@@ -63,6 +63,7 @@ body {
     object-fit: contain;
     flex-shrink: 0;
     transform: rotate(-13deg);
+    transform-origin: center bottom;
     transition: transform 0.3s ease;
 }
 

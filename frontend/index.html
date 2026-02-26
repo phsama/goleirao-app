@@ -58,69 +58,92 @@
                 </div>
             </section>
 
+
             <section id="como-funciona" class="how-it-works">
-                <h2>Como Funciona?</h2>
+                <div class="story-intro">
+                    <span class="badge">Chega de aperto no gol!</span>
+                    <h2>Já chegou no campo e precisou fazer <span class="highlight">rodízio de goleiro?</span></h2>
+                    <p>Aquele amigo de chinela que "cata muito no gol"... mas toma 18 frangos. O centroavante que "tá de
+                        boa" entre os pauzinhos. O goleiro improvisado que reclama de cada bola que entra. A gente sabe
+                        como é.<br><br>No <strong>Goleirão</strong>, a gente conecta quem realmente é <strong>guardião
+                            das três traves</strong>, protetor da meta, xerife da área. Goleiros de verdade, disponíveis
+                        na sua região, prontos pra defender a sua honra.</p>
+                </div>
                 <div class="steps-grid">
                     <div class="step-card">
                         <div class="step-number">1</div>
                         <h3>Cadastre a Pelada</h3>
-                        <p>Informe o dia, local e horário do seu jogo em menos de um minuto na plataforma.</p>
+                        <p>Informe o dia, local e horário do seu jogo em menos de um minuto. Simples, rápido e sem
+                            enrolação.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">2</div>
                         <h3>Avisamos a Muralha</h3>
-                        <p>Notificamos imediatamente os melhores goleiros da sua região que sua pelada precisa de
-                            segurança.</p>
+                        <p>Notificamos os goleiros cadastrados na sua região. Profissionais, amadores raçudos — mas
+                            todos ali pra defender de verdade.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">3</div>
                         <h3>Jogo Garantido</h3>
-                        <p>Um goleiro aceita a convocação, aparece no jogo e a resenha está garantida!</p>
+                        <p>Um goleiro aceita a convocação, aparece no campo, e a resenha começa sem drama. Sem rodízio,
+                            sem improviso.</p>
                     </div>
                 </div>
             </section>
 
-            <section id="newsletter" class="newsletter-section">
-                <div class="newsletter-card">
-                    <h2>Entre para a Lista de Espera</h2>
-                    <p>Seja o primeiro a testar o App Goleirão e ganhe condições exclusivas para a sua pelada no
-                        lançamento.</p>
-                    <form @submit.prevent="submitNewsletter" class="inline-form">
-                        <input type="email" id="newsEmailInput" v-model="newsEmail"
-                            placeholder="Digite seu melhor e-mail" required>
-                        <button type="submit" :disabled="loadingNews" id="btn-newsletter">{{ loadingNews ? 'Enviando...'
-                            : 'Entrar na Fila ->' }}</button>
-                    </form>
-                    <p v-if="newsMsg" :class="['msg', newsSuccess ? 'success' : 'error']">{{ newsMsg }}</p>
+
+            <section class="partnership-section">
+                <div class="partnership-card">
+                    <span class="badge">⚽ Pra quem quer mais que assistir...</span>
+                    <h2>Quer <span class="highlight">entrar pro time</span> que vai mudar o futebol de várzea?</h2>
+                    <p>O Goleirão ainda está no começo. Se você é empreendedor, investidor, tem uma academia, uma arena
+                        ou simplesmente quer fazer parte de algo que vai movimentar o esporte amador no Brasil —
+                        <strong>o banco de reservas ainda tem espaço pra você</strong>.
+                    </p>
+                    <div class="partnership-actions">
+                        <a href="https://wa.me/5511969038053?text=Oi!%20Vi%20o%20Goleir%C3%A3o.App%20e%20fiquei%20interessado%20em%20uma%20parceria"
+                            class="cta-button primary" @click="trackWhatsApp">💬 Bora Conversar</a>
+                        <a href="#contato" @click.prevent="scrollTo('contato')" class="cta-button secondary">Enviar
+                            Proposta</a>
+                    </div>
                 </div>
             </section>
 
-            <section id="contato" class="contact-section">
-                <div class="contact-container">
-                    <h2>Dúvidas, sugestões ou parcerias?</h2>
-                    <form @submit.prevent="submitContact" class="contact-form">
-                        <div class="form-group">
-                            <label>Seu Nome</label>
-                            <input type="text" v-model="contact.name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>E-mail</label>
-                            <input type="email" v-model="contact.email" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Sua Mensagem</label>
-                            <textarea v-model="contact.message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" :disabled="loadingContact" class="cta-button primary full-width">{{
-                            loadingContact ? 'Enviando Mensagem...' : 'Enviar Mensagem' }}</button>
-                    </form>
-                    <p v-if="contactMsg" :class="['msg', contactSuccess ? 'success' : 'error']">{{ contactMsg }}</p>
+            <section id="newsletter" class="newsletter-contact-section">
+                <div class="two-col-forms">
+                    <div class="newsletter-card">
+                        <h2>Entre para a Lista de Espera</h2>
+                        <p>Seja o primeiro a testar o App Goleirão e ganhe condições exclusivas no lançamento.</p>
+                        <form @submit.prevent="submitNewsletter" class="inline-form stacked">
+                            <input type="email" id="newsEmailInput" v-model="newsEmail"
+                                placeholder="Digite seu melhor e-mail" required>
+                            <button type="submit" :disabled="loadingNews" id="btn-newsletter">{{ loadingNews ?
+                                'Enviando...'
+                                : 'Entrar na Fila ->' }}</button>
+                        </form>
+                        <p v-if="newsMsg" :class="['msg', newsSuccess ? 'success' : 'error']">{{ newsMsg }}</p>
+                    </div>
+
+                    <div id="contato" class="contact-card">
+                        <h2>Dúvidas, sugestões ou parcerias?</h2>
+                        <p>Me chama! Respondo rápido.</p>
+                        <form @submit.prevent="submitContact" class="contact-form">
+                            <input type="text" v-model="contact.name" placeholder="Seu Nome" required>
+                            <input type="email" v-model="contact.email" placeholder="Seu E-mail" required>
+                            <textarea v-model="contact.message" rows="4" placeholder="Sua Mensagem" required></textarea>
+                            <button type="submit" :disabled="loadingContact" class="cta-button primary full-width">{{
+                                loadingContact ? 'Enviando...' : 'Enviar Mensagem' }}</button>
+                        </form>
+                        <p v-if="contactMsg" :class="['msg', contactSuccess ? 'success' : 'error']">{{ contactMsg }}</p>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer>
             <p>&copy; 2026 Goleirão. O fim do improviso no gol.</p>
+            <p class="footer-credit">powered by <a href="https://riviadev.com.br" target="_blank">riviadev.com.br</a>
+            </p>
         </footer>
 
         <a href="https://wa.me/5511969038053?text=Oi!%20Vi%20o%20Goleir%C3%A3o.App%20e%20quero%20saber%20como%20funciona"

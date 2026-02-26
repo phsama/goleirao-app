@@ -253,6 +253,24 @@ h1 {
     background: var(--white);
 }
 
+.story-intro {
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.story-intro h2 {
+    font-size: 2.8rem;
+    margin: 20px 0 25px;
+    letter-spacing: -1px;
+    line-height: 1.15;
+}
+
+.story-intro p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
 .how-it-works h2 {
     font-size: 3rem;
     margin-bottom: 50px;
@@ -306,33 +324,79 @@ h1 {
     font-size: 1.1rem;
 }
 
-/* Newsletter Section */
-.newsletter-section {
+/* Newsletter + Contact Two-Column Section */
+.newsletter-contact-section {
     padding: 80px 5%;
     background: linear-gradient(135deg, var(--bg-color), #E8F7FF);
 }
 
-.newsletter-card {
-    max-width: 850px;
+.two-col-forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
     margin: 0 auto;
+    align-items: start;
+}
+
+.newsletter-card,
+.contact-card {
     background: var(--white);
-    padding: 60px 50px;
+    padding: 45px 40px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    text-align: center;
 }
 
-.newsletter-card h2 {
-    font-size: 2.8rem;
-    margin-bottom: 25px;
-    letter-spacing: -1px;
+.newsletter-card h2,
+.contact-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
 }
 
-.newsletter-card p {
-    font-size: 1.2rem;
+.newsletter-card p,
+.contact-card>p {
+    font-size: 1.05rem;
     color: var(--text-muted);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
+
+.inline-form.stacked {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inline-form.stacked input {
+    max-width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #EAEAEA;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+    background: var(--bg-color);
+    font-family: inherit;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--secondary);
+    background: var(--white);
+}
+
+
 
 .inline-form {
     display: flex;
@@ -465,6 +529,48 @@ h1 {
     pointer-events: none;
 }
 
+/* Partnership Section */
+.partnership-section {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #0d1b2a, #1a2c3d);
+    text-align: center;
+    color: var(--white);
+}
+
+.partnership-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.partnership-card .badge {
+    background: rgba(255, 51, 102, 0.2);
+    color: var(--primary);
+    border: 1px solid rgba(255, 51, 102, 0.4);
+    margin-bottom: 30px;
+}
+
+.partnership-card h2 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    color: var(--white);
+}
+
+.partnership-card p {
+    font-size: 1.15rem;
+    color: #b0c4d8;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.partnership-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -472,6 +578,25 @@ footer {
     background: var(--bg-color);
     color: var(--text-muted);
     font-weight: 600;
+}
+
+.footer-credit {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    opacity: 0.6;
+}
+
+.footer-credit a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-credit a:hover {
+    color: var(--secondary);
+    opacity: 1;
 }
 
 /* Animations */

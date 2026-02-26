@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goleirão App - A sua pelada nunca mais ficará sem goleiro!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) GA4 -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDW9CZZHPJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YDW9CZZHPJ');
+        gtag('config', 'GT-PJRRXC7');
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="navbar">
+            <div class="logo">Goleirão</div>
+            <nav class="links">
+                <a href="#como-funciona" @click.prevent="scrollTo('como-funciona')">Como Funciona</a>
+                <a href="#contato" @click.prevent="scrollTo('contato')">Fale Comigo</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <span class="badge">O terror dos atacantes chegou</span>
+                    <h1>A sua pelada <br><span class="highlight">nunca mais</span> ficará sem goleiro!</h1>
+                    <p>Cadastre o seu jogo e conecte-se com os melhores goleiros disponíveis na sua região. Foco de
+                        vocês? Apenas fazer o gol lá na frente.</p>
+
+                    <div class="hero-actions">
+                        <button class="cta-button primary" @click="scrollTo('newsletter')">Entrar na Lista de
+                            Espera</button>
+                        <a href="https://wa.me/5511969038053" class="cta-button secondary" @click="trackWhatsApp">Chamar
+                            no WhatsApp</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="glass-card">
+                        <div class="card-icon">🧤</div>
+                        <h3>Goleiro Confirmado!</h3>
+                        <p>Partida às 20h - Arena Society</p>
+                        <button class="btn-sm">Ver Perfil</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="como-funciona" class="how-it-works">
+                <h2>Como Funciona?</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Cadastre a Pelada</h3>
+                        <p>Informe o dia, local e horário do seu jogo em menos de um minuto na plataforma.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Avisamos a Muralha</h3>
+                        <p>Notificamos imediatamente os melhores goleiros da sua região que sua pelada precisa de
+                            segurança.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Jogo Garantido</h3>
+                        <p>Um goleiro aceita a convocação, aparece no jogo e a resenha está garantida!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="newsletter" class="newsletter-section">
+                <div class="newsletter-card">
+                    <h2>Entre para a Lista de Espera</h2>
+                    <p>Seja o primeiro a testar o App Goleirão e ganhe condições exclusivas para a sua pelada no
+                        lançamento.</p>
+                    <form @submit.prevent="submitNewsletter" class="inline-form">
+                        <input type="email" id="newsEmailInput" v-model="newsEmail"
+                            placeholder="Digite seu melhor e-mail" required>
+                        <button type="submit" :disabled="loadingNews" id="btn-newsletter">{{ loadingNews ? 'Enviando...'
+                            : 'Entrar na Fila ->' }}</button>
+                    </form>
+                    <p v-if="newsMsg" :class="['msg', newsSuccess ? 'success' : 'error']">{{ newsMsg }}</p>
+                </div>
+            </section>
+
+            <section id="contato" class="contact-section">
+                <div class="contact-container">
+                    <h2>Dúvidas, sugestões ou parcerias?</h2>
+                    <form @submit.prevent="submitContact" class="contact-form">
+                        <div class="form-group">
+                            <label>Seu Nome</label>
+                            <input type="text" v-model="contact.name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" v-model="contact.email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sua Mensagem</label>
+                            <textarea v-model="contact.message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" :disabled="loadingContact" class="cta-button primary full-width">{{
+                            loadingContact ? 'Enviando Mensagem...' : 'Enviar Mensagem' }}</button>
+                    </form>
+                    <p v-if="contactMsg" :class="['msg', contactSuccess ? 'success' : 'error']">{{ contactMsg }}</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Goleirão. O fim do improviso no gol.</p>
+        </footer>
+
+        <a href="https://wa.me/5511969038053" id="floating-whatsapp" class="floating-wa" @click="trackWhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-message-circle">
+                <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    newsEmail: '', loadingNews: false, newsMsg: '', newsSuccess: false,
+                    contact: { name: '', email: '', message: '' },
+                    loadingContact: false, contactMsg: '', contactSuccess: false,
+                    backendUrl: 'http://localhost:8000'
+                }
+            },
+            methods: {
+                scrollTo(id) {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                },
+                trackWhatsApp() {
+                    gtag('event', 'click_whatsapp', { 'event_category': 'Engagement', 'event_label': 'Botão WhatsApp' });
+                },
+                async submitNewsletter() {
+                    this.loadingNews = true; this.newsMsg = '';
+                    try {
+                        const res = await fetch(`${this.backendUrl}/api/newsletter`, {
+                            method: 'POST', headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email: this.newsEmail })
+                        });
+                        if (res.ok) {
+                            this.newsSuccess = true; this.newsMsg = 'Craque! Você está na lista de espera.';
+                            this.newsEmail = '';
+                        } else throw new Error();
+                    } catch (e) {
+                        this.newsSuccess = false; this.newsMsg = 'Falha ao conectar no servidor.';
+                    } finally { this.loadingNews = false; }
+                },
+                async submitContact() {
+                    this.loadingContact = true; this.contactMsg = '';
+                    try {
+                        const res = await fetch(`${this.backendUrl}/api/contact`, {
+                            method: 'POST', headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(this.contact)
+                        });
+                        if (res.ok) {
+                            this.contactSuccess = true; this.contactMsg = 'Mensagem enviada com sucesso!';
+                            this.contact = { name: '', email: '', message: '' };
+                        } else throw new Error();
+                    } catch (e) {
+                        this.contactSuccess = false; this.contactMsg = 'Falha ao conectar no servidor.';
+                    } finally { this.loadingContact = false; }
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>

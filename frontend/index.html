@@ -63,11 +63,11 @@
                 <div class="story-intro">
                     <span class="badge">Chega de aperto no gol!</span>
                     <h2>Já chegou no campo e precisou fazer <span class="highlight">rodízio de goleiro?</span></h2>
-                    <p>Aquele amigo de chinela que "cata muito no gol"... mas toma 18 frangos. O centroavante que "tá de
-                        boa" entre os pauzinhos. O goleiro improvisado que reclama de cada bola que entra. A gente sabe
-                        como é.<br><br>No <strong>Goleirão</strong>, a gente conecta quem realmente é <strong>guardião
-                            das três traves</strong>, protetor da meta, xerife da área. Goleiros de verdade, disponíveis
-                        na sua região, prontos pra defender a sua honra.</p>
+                    <p>Aquele amigo de chinela que "cata muito no gol"... mas toma 18 frangos.<br>Aquele linha que "tá
+                        de boa" em pegar no gol.<br>Aquele guarda-metas improvisado que sempre bota culpa na
+                        zaga.<br><br>A gente sabe como é.<br><br>No <strong>Goleirão</strong>, a gente conecta quem
+                        realmente é <strong>guardião das três traves</strong> — protetor da meta, xerife da área.
+                        Goleiros de verdade, disponíveis na sua região, prontos pra defender a sua honra.</p>
                 </div>
                 <div class="steps-grid">
                     <div class="step-card">
@@ -186,14 +186,15 @@
                     try {
                         const res = await fetch(`${this.backendUrl}/api/newsletter`, {
                             method: 'POST', headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ email: this.newsEmail })
+                            body: JSON.stringify({ email: this.newsEmail }),
+                            signal: AbortSignal.timeout(60000)
                         });
                         if (res.ok) {
                             this.newsSuccess = true; this.newsMsg = 'Craque! Você está na lista de espera.';
                             this.newsEmail = '';
                         } else throw new Error();
                     } catch (e) {
-                        this.newsSuccess = false; this.newsMsg = 'Falha ao conectar no servidor.';
+                        this.newsSuccess = false; this.newsMsg = 'Servidor acordando... tente novamente em 1 minuto!';
                     } finally { this.loadingNews = false; }
                 },
                 async submitContact() {

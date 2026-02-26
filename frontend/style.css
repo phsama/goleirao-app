@@ -256,6 +256,7 @@ h1 {
 .story-intro {
     max-width: 800px;
     margin: 0 auto 60px;
+    text-align: left;
 }
 
 .story-intro h2 {

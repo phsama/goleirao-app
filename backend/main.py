@@ -10,7 +10,12 @@ app = FastAPI(title="Goleirão App API")
 # Setup CORS para permitir acesso do nosso frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Atenção no MVP usamos *, idealmente seria a URL do Netlify/Vercel
+    allow_origins=[
+        "http://localhost:8080",
+        "https://goleirao-app.vercel.app",
+        "https://goleirao.com.br",
+        "https://www.goleirao.com.br"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

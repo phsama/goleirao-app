@@ -59,10 +59,17 @@ body {
 }
 
 .logo-icon {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
     flex-shrink: 0;
+    transform: rotate(-13deg);
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(-5deg) scale(1.1);
 }
 
 .logo::after {

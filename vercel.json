@@ -3,7 +3,7 @@
   "name": "goleirao-frontend",
   "builds": [
     {
-      "src": "frontend/**",
+      "src": "frontend/index.html",
       "use": "@vercel/static"
     }
   ],

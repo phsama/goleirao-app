@@ -64,8 +64,6 @@ body {
     object-fit: contain;
     flex-shrink: 0;
     transform: rotate(-13deg);
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 6px;
     transition: transform 0.3s ease;
 }
 

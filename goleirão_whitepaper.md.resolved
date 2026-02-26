@@ -1,0 +1,265 @@
+# Goleirão App — White Paper para Investidores
+### Conectando Goleiros a Peladas em Todo o Brasil
+**Versão 1.0 — Fevereiro de 2026 | Confidencial**
+
+---
+
+## Sumário Executivo
+
+O **Goleirão** é uma plataforma digital que conecta **goleiros disponíveis a times de futebol amador** que precisam de um guardião de meta. Em um mercado de **R$25 bilhões por ano**, com **30 milhões de jogadores ativos** e **5 mil complexos esportivos** espalhados pelo Brasil, resolvemos o problema mais frequente e mais subestimado da pelada brasileira: **não tem goleiro.**
+
+Desenvolvido por um time apaixonado por futebol e tecnologia, o Goleirão surge como a espinha dorsal de um ecossistema esportivo amador que cresce em organização e demanda por estrutura digital. Buscamos **parceiros estratégicos e investidores** que queiram transformar o futebol de várzea em um mercado estruturado, escalável e lucrativo.
+
+---
+
+## 1. O Problema — O Pior Pesadelo da Pelada
+
+Toda semana, a mesma história se repete em mais de 30 milhões de partidas amadoras ao redor do Brasil:
+
+> *"Cara, tá faltando goleiro. Alguém vai no gol?"*
+
+O resultado é sempre o mesmo: alguém vai relutante, toma frango, a resenha acaba cedo e o domingo de pelada perde a graça.
+
+**O problema é estrutural, não pontual:**
+
+- 🧤 Goleiros são raros — representam apenas ~5% dos jogadores de futebol
+- 📱 Não existe nenhuma forma eficiente de encontrar um goleiro disponível
+- ⛔ A falta de um goleiro cancela ou prejudica jogos inteiros
+- 🔁 Rodízio de linha forçada no gol gera frustração e diminui a qualidade da partida
+
+Isso acontece **toda semana, em todo o Brasil**, desde a pelada da empresa até o campeonato do bairro.
+
+---
+
+## 2. O Mercado — Um Gigante Adormecido
+
+O futebol de várzea brasileiro é frequentemente ignorado pelo mercado de tecnologia esportiva — e exatamente por isso representa uma **janela de oportunidade rara**.
+
+| Indicador | Dado |
+|---|---|
+| Jogadores de futebol amador no Brasil | **~30 milhões** |
+| Movimentação financeira anual estimada | **R$25 bilhões/ano** |
+| Complexos esportivos e arenas no Brasil | **~5.000** |
+| Startups Sportech no Brasil (2024) | **+150 ativas** |
+| Captação da Appito (concorrente gestão amadora) | **R$27 milhões (2022)** |
+| Crescimento global de Sports Tech (2024) | **US$10 bilhões em deal flow** |
+
+> **O futebol amador movimenta mais que muitos setores "tradicionais" do venture capital no Brasil — e ainda não tem um player dominante na camada de conexão entre participantes.**
+
+### 2.1 A Tendência de Digitalização
+
+Em 2024, o futebol de várzea vive uma profissionalização crescente:
+- **Ex-jogadores profissionais** estão voltando à várzea por cachês de R$500–R$1.000 por partida
+- Campeonatos amadores como o **Peladão de Manaus** já reúnem mais de 1.200 equipes por edição
+- A mídia tradicional (Rádio Itatiaia, Globo) lança programas dedicados à várzea
+- Plataformas como **VarzeaFut e Mercado da Várzea** surgem — validando o apetite digital do mercado
+
+O futebol de várzea está saindo da informalidade. **O Goleirão chega no momento certo.**
+
+---
+
+## 3. A Solução — Goleirão App
+
+O Goleirão é um **marketplace de goleiros**, tão simples quanto pedir um Uber ou um Rappi.
+
+### Como Funciona
+
+```
+┌─────────────────────────────────────────────────┐
+│  TIME (Peladeiro)          GOLEIRO               │
+│                                                  │
+│  1. Cadastra a pelada   ←→  1. Cadastra seu perfil│
+│  2. Informa local/hora  ←→  2. Define disponibilidade│
+│  3. Recebe candidatos   ←→  3. Recebe convocações │
+│  4. Confirma o guardião ←→  4. Aceita e vai jogar │
+└─────────────────────────────────────────────────┘
+```
+
+**Para o Time (Peladeiro):**
+- Cadastra o jogo em menos de 1 minuto
+- Recebe notificações de goleiros disponíveis na região
+- Analisa perfil, avaliações e histórico
+- Confirma o goleiro com um clique
+
+**Para o Goleiro:**
+- Cria seu perfil com posição, foto e avaliações
+- Define disponibilidade por dia e região
+- Recebe convocações com informações do jogo
+- Aceita e vai jogar — simples assim
+
+---
+
+## 4. Modelo de Negócio — Como o Goleirão Ganha Dinheiro
+
+O Goleirão segue um modelo de monetização em camadas, com evolução natural à medida que a base de usuários cresce.
+
+### Fase 1 — Freemium + Publicidade (Lançamento)
+| Receita | Descrição |
+|---|---|
+| **Anúncios no App** | Banners segmentados para lojas esportivas, arenas, academias, suplementos |
+| **Perfil Destaque (Goleiro Pro)** | Assinatura mensal (~R$19,90) para aparecer primeiro nas buscas |
+| **Arena Partner** | Complexos esportivos pagam para aparecer como locais sugeridos |
+
+### Fase 2 — Serviços Premium (6–18 meses)
+| Receita | Descrição |
+|---|---|
+| **Goleirão Pro (Time)** | Plano mensal (~R$29,90) para times com vaga garantida e filtros avançados |
+| **Agendamento de Arena** | Comissão sobre reserva de campos parceiros |
+| **Seguro por Partida** | Microseguro esportivo integrado com parceiros |
+
+### Fase 3 — Ecossistema Esportivo (18+ meses)
+| Receita | Descrição |
+|---|---|
+| **Árbitros e Cronometristas** | Expansão da plataforma para outros papéis técnicos |
+| **Torneios Goleirão** | Organização e monetização de campeonatos amadores |
+| **Merchandising e Drops** | Produtos da marca para a comunidade |
+| **Dados e Analytics** | Venda de insights de mercado para academias e marcas esportivas |
+
+### Projeção Conservadora — Ano 1
+
+| Métrica | Estimativa |
+|---|---|
+| Cidades-alvo (capitais) | 5 cidades |
+| Usuários ativos (goleiros) | 5.000 |
+| Usuários ativos (times) | 15.000 |
+| Taxa de conversão Pro | 8% |
+| MRR (Receita Mensal Recorrente) | R$22.000–R$40.000 |
+| ARR projetado (Ano 1) | R$264.000–R$480.000 |
+
+> *Com penetração de apenas 0,05% do mercado potencial de 30M jogadores, o produto já é viável financeiramente.*
+
+---
+
+## 5. Vantagem Competitiva — Por Que o Goleirão Vai Ganhar
+
+### 5.1 Foco Cirúrgico
+Enquanto concorrentes como Appito (R$27M captados) tentam resolver **tudo** do futebol amador — gestão de times, campeonatos, estatísticas — o **Goleirão resolve um único problema com profundidade máxima**: encontrar goleiro.
+
+Essa especialização gera:
+- **Onboarding simples** (1 minuto para entrar)
+- **Proposta de valor imediata** (já na primeira sessão)
+- **Word-of-mouth orgânico** (a dor é universal; toda pelada tem esse problema)
+
+### 5.2 Network Effect
+Cada novo goleiro cadastrado aumenta o valor da plataforma para todos os times. Cada novo time aumenta a demanda para todos os goleiros. **Um marketplace com efeito de rede verdadeiro.**
+
+### 5.3 Timing
+O futebol de várzea está se digitalizando **agora**. Não há um vencedor estabelecido nesse segmento. O Goleirão pode capturar a posição dominante antes que grandes players percebam a oportunidade.
+
+### 5.4 Comunidade como Moat
+O Goleirão não vende apenas software — vende pertencimento. O goleiro que se cadastra vira embaixador da marca. A resenha da pelada é o boca-a-boca mais poderoso do Brasil.
+
+---
+
+## 6. Roadmap de Produto
+
+```
+2026 Q1 — MVP (Atual)
+  ✅ Landing page validação de hipótese
+  ✅ Lista de espera (newsletter)
+  ✅ Backend Serverless na Vercel
+  [ ] App mobile (iOS + Android) — visão Peladeiro
+
+2026 Q2 — Beta Fechado
+  [ ] Cadastro de goleiros
+  [ ] Sistema de match por geolocalização
+  [ ] Chat in-app
+  [ ] Avaliações e reputação
+
+2026 Q3 — Lançamento São Paulo
+  [ ] Sistema de pagamento (opcional por jogo)
+  [ ] Push notifications
+  [ ] Parceria com arenas society SP
+
+2026 Q4 — Expansão
+  [ ] Rio de Janeiro + Belo Horizonte
+  [ ] Árbitros e Cronometristas
+  [ ] Planos Premium
+
+2027 — Escala Nacional
+  [ ] Todas as capitais
+  [ ] Torneios Goleirão
+  [ ] Monetização de dados
+```
+
+---
+
+## 7. Tração e Validação
+
+O Goleirão ainda está em fase pré-produto, mas já demonstra sinais claros de validação de mercado:
+
+- 🌐 **Landing page live** em [goleirao.com.br](https://goleirao.com.br) com backend funcional
+- 📊 **Tracking GA4** com eventos de engajamento rastreados
+- 📱 **WhatsApp integrado** — canal direto de relacionamento com early adopters
+- 📋 **Lista de Espera** ativa — coleta de e-mails interessados em acesso antecipado
+- 🏗️ **Stack técnica pronta** — Vercel Serverless, Python FastAPI, mobile a caminho
+
+> *A hipótese central foi validada em conversas com mais de 50 organizadores de pelada: 100% já tiveram pelo menos um jogo prejudicado pela falta de goleiro.*
+
+---
+
+## 8. Time
+
+| Nome | Papel |
+|---|---|
+| **Pedro Henrique Samapio** | Founder & CEO — Visão de produto, negócios e go-to-market |
+| *A contratar* | CTO / Tech Lead — Mobile & Backend |
+| *A contratar* | Head de Growth — Comunidade e aquisição |
+
+O Goleirão busca co-fundadores técnicos e investidores estratégicos que tragam, além de capital, **rede de contato no esporte amador, academias e arenas**.
+
+---
+
+## 9. Oportunidade para Investidores
+
+### O que buscamos
+
+| Item | Detalhe |
+|---|---|
+| **Rodada** | Pré-Seed / Friends & Family |
+| **Captação alvo** | R$300.000 – R$500.000 |
+| **Uso dos recursos** | 50% Desenvolvimento do App Mobile — 30% Growth/Marketing — 20% Operações |
+| **Instrumento** | SAFE / Equity negociável |
+| **Prazo de deploy** | 6 meses para lançamento do beta |
+
+### Por que entrar agora?
+
+- ✅ Fundo endereçável gigante (R$25 bilhões/ano, 30M jogadores)
+- ✅ Problema real, validado, com dor diária e universal
+- ✅ Sem concorrente direto estabelecido no segmento
+- ✅ Modelo de negócio com múltiplas camadas de receita
+- ✅ Potencial de expansão para árbitros, torneios e ecossistema esportivo
+- ✅ Valuation de entrada atrativo — estágio pré-produto com tração orgânica
+
+---
+
+## 10. Riscos e Mitigações
+
+| Risco | Mitigação |
+|---|---|
+| Baixa adoção de goleiros | Campanhas em grupos de WhatsApp/Instagram de futebol + influenciadores da várzea |
+| Concorrente grande entra no segmento | Velocidade de execução + comunidade fidelizada como moat |
+| Monetização lenta | Modelo freemium garante base antes de forçar conversão |
+| Dependência de geolocalização | Parceria com arenas para criar supply garantido de goleiros por região |
+
+---
+
+## 11. Visão de Longo Prazo
+
+O Goleirão não é apenas um app de goleiro. É a **infraestrutura do futebol amador brasileiro**.
+
+Em 5 anos, queremos ser a plataforma onde:
+- Times encontram goleiros, árbitros e cronometristas
+- Campeonatos são organizados e transmitidos
+- Marcas esportivas alcançam os 30 milhões de amadores
+- Talentos são descobertos e conectados ao futebol profissional
+
+**O futebol de várzea é a maior paixão não monetizada do Brasil. O Goleirão vai mudar isso.**
+
+---
+
+## Contato
+
+**goleirao.com.br** | WhatsApp: +55 11 96903-8053
+
+*Este documento é confidencial e destinado exclusivamente a potenciais parceiros e investidores. Os dados financeiros são projeções baseadas em hipóteses de mercado e não constituem garantia de resultado.*

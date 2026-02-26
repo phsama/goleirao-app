@@ -49,10 +49,20 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.8rem;
     font-weight: 800;
     color: var(--text-dark);
     letter-spacing: -0.5px;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .logo::after {
@@ -671,6 +681,7 @@ footer {
 
 /* Responsive — 768px (tablets e iPhone landscape) */
 @media (max-width: 768px) {
+
     /* Navbar: mantém em linha mas menor */
     .navbar {
         flex-direction: row;
@@ -694,7 +705,8 @@ footer {
     .hero {
         padding-top: 100px;
         padding-bottom: 50px;
-        background-attachment: scroll; /* parallax quebra em mobile */
+        background-attachment: scroll;
+        /* parallax quebra em mobile */
     }
 
     h1 {

@@ -45,6 +45,7 @@ body {
     width: 100%;
     z-index: 100;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
 }
 
 .logo {
@@ -68,7 +69,7 @@ body {
 }
 
 .logo:hover .logo-icon {
-    transform: rotate(-22deg) scale(1.35) translateX(-4px);
+    transform: rotate(-22deg) scale(1.15) translateX(-4px);
 }
 
 .logo::after {
@@ -714,7 +715,7 @@ footer {
         background: transparent;
     }
 
-    body::before {
+    html::before {
         content: '';
         position: fixed;
         top: 0;

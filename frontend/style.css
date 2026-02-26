@@ -39,13 +39,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(16px);
+    background: #FFFFFF;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .logo {
@@ -68,7 +67,7 @@ body {
 }
 
 .logo:hover .logo-icon {
-    transform: rotate(-5deg) scale(1.1);
+    transform: rotate(-22deg) scale(1.35) translateX(-4px);
 }
 
 .logo::after {

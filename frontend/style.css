@@ -38,7 +38,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(16px);
     position: fixed;
@@ -59,8 +59,8 @@ body {
 }
 
 .logo-icon {
-    width: 36px;
-    height: 36px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -93,7 +93,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 120px 5% 60px;
+    padding: 90px 5% 60px;
     min-height: 90vh;
     background: linear-gradient(rgba(26, 26, 36, 0.85), rgba(26, 26, 36, 0.95)), url('hero_banner.png');
     background-size: cover;

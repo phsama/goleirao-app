@@ -651,6 +651,10 @@ footer {
     }
 }
 
+.goleiro-adic {
+    font-size: 1.1em;
+}
+
 @keyframes floatCard {
     0% {
         transform: translateY(0px);
